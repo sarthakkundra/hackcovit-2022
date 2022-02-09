@@ -40,45 +40,35 @@ const Countdown = () => {
   }, 1000);
 
   return (
-    <div className="flex my-7">
+    <div className="flex my-7 justify-between md:justify-start">
+      <TimeUnit unit="Days" value={days} />
+      <TimeUnit unit="Hours" value={hours} />
+      <TimeUnit unit="Minutes" value={minutes} />
+      <TimeUnit unit="Seconds" value={seconds} />
+    </div>
+  );
+};
+
+const TimeUnit = ({ unit, value }: ITimeUnitProps) => {
+  return (
+    <div className="mr-3 text-center text-xs md:text-sm">
       <div
         style={{
           border: '2px solid',
           borderImage: 'linear-gradient(180deg, #FFA95A 0%, #FF7979 100%) 30%',
         }}
-        className="w-16 h-16 flex justify-center items-center mr-3 font-semibold text-3xl"
+        className="w-16 h-16 flex justify-center items-center font-semibold text-xl md:text-3xl mb-1"
       >
-        {days}
+        {value}
       </div>
-      <div
-        style={{
-          border: '2px solid',
-          borderImage: 'linear-gradient(180deg, #FFA95A 0%, #FF7979 100%) 30%',
-        }}
-        className="w-16 h-16 flex justify-center items-center mr-3 font-semibold text-3xl"
-      >
-        {hours}
-      </div>
-      <div
-        style={{
-          border: '2px solid',
-          borderImage: 'linear-gradient(180deg, #FFA95A 0%, #FF7979 100%) 30%',
-        }}
-        className="w-16 h-16 flex justify-center items-center mr-3 font-semibold text-3xl"
-      >
-        {minutes}
-      </div>
-      <div
-        style={{
-          border: '2px solid',
-          borderImage: 'linear-gradient(180deg, #FFA95A 0%, #FF7979 100%) 30%',
-        }}
-        className="w-16 h-16 flex justify-center items-center mr-3 font-semibold text-3xl"
-      >
-        {seconds}
-      </div>
+      {unit}
     </div>
   );
 };
 
 export default Countdown;
+
+interface ITimeUnitProps {
+  unit: string;
+  value: string;
+}
