@@ -61,13 +61,17 @@ export default function ThemesCarousel() {
         carouselRef={ref}
         render={(parentWidth, carouselRef) => {
           let currentVisibleSlide = 3;
-          // if (parentWidth <= 1080) currentVisibleSlide = 1;
+          let slideWidth = 500;
+          if (parentWidth <= 480) {
+            currentVisibleSlide = 1;
+            slideWidth = 300;
+          }
           return (
             <StackedCarousel
               ref={carouselRef}
               data={data}
               carouselWidth={parentWidth}
-              slideWidth={500}
+              slideWidth={slideWidth}
               slideComponent={Slide}
               maxVisibleSlide={3}
               currentVisibleSlide={currentVisibleSlide}
@@ -90,7 +94,7 @@ const Slide = React.memo(function (props: StackedCarouselSlideProps) {
 
   return (
     <div
-      className="flex p-10"
+      className="flex p-4 md:p-10"
       style={{
         width: '100%',
         height: 300,
@@ -103,7 +107,7 @@ const Slide = React.memo(function (props: StackedCarouselSlideProps) {
         <h1 className="text-md md:text-2xl font-semibold my-2">{title}</h1>
         <p className="text-xs md:text-sm font-semibold my-2">{description}</p>
       </div>
-      <img src={image} width={200} />
+      <img src={image} className="w-1/2" />
     </div>
   );
 });
