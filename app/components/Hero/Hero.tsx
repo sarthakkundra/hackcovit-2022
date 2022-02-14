@@ -18,15 +18,15 @@ const Hero = () => {
           <img src={texture} className="h-full w-full" />
         </div>
       </div>
-      {/* <div
+      <div
         style={{
           background:
             'linear-gradient(180deg, rgba(255, 121, 121, 0.95) 0%, rgba(255, 169, 90, 0.83) 100%)',
         }}
-        className="flex md:hidden h-screen w-full justify-center text-center"
+        className="flex md:hidden w-full justify-center text-center"
       >
         <HeroContent />
-      </div> */}
+      </div>
     </>
   );
 };
@@ -42,7 +42,10 @@ const HeroContent = () => {
           March 22-27, 2022
         </h3>
         <Countdown />
-        <button className="register_btn">
+        <button className="hidden md:block register_btn">
+          <div className="uppercase text-base md:text-xl">Register Now</div>
+        </button>
+        <button className="block md:hidden bg-background px-5 py-4 rounded-full mx-auto">
           <div className="uppercase text-base md:text-xl">Register Now</div>
         </button>
       </div>

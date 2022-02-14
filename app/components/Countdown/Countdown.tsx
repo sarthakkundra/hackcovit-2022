@@ -57,7 +57,7 @@ const TimeUnit = ({ unit, value }: ITimeUnitProps) => {
           border: '2px solid',
           borderImage: 'linear-gradient(180deg, #FFA95A 0%, #FF7979 100%) 30%',
         }}
-        className="w-16 h-16 flex justify-center items-center font-semibold text-xl md:text-3xl mb-1"
+        className="w-16 h-16 bg-background flex justify-center items-center font-semibold text-xl md:text-3xl mb-1"
       >
         {value}
       </div>
