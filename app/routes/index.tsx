@@ -1,7 +1,15 @@
+import Hero from '~/components/Hero/Hero';
+
+import styles from '~/styles/index.css';
+
+export function links() {
+  return [{ rel: 'stylesheet', href: styles }];
+}
+
 export default function Index() {
   return (
-    <div className="flex justify-center items-center">
-      <p className="text-3xl underline">HELLO</p>
-    </div>
+    <>
+      <Hero />
+    </>
   );
 }
