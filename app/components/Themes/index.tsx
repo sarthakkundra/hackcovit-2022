@@ -1,4 +1,4 @@
-import ThemesCarousel from '../ThemesCarousel/ThemesCarousel';
+import ThemesCarousel from '../ThemesCarousel';
 
 const Themes = () => {
   return (
