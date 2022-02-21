@@ -1,4 +1,4 @@
-import Countdown from '../Countdown/Countdown';
+import Countdown from '../Countdown';
 
 import texture from '../../images/Grain-Texture.png';
 
@@ -36,7 +36,7 @@ const HeroContent = () => {
     <div className="p-16 flex justify-center items-center">
       <div>
         <h1 className="text-4xl md:text-7xl font-semibold my-3">
-          HackoVIT 2.0
+          HackCoVIT 2.0
         </h1>
         <h3 className="text-2xl md:text-4xl font-semibold my-3">
           March 22-27, 2022

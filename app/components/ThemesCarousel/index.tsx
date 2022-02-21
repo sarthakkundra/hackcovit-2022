@@ -8,44 +8,7 @@ import {
 import { BsFillCaretRightFill } from 'react-icons/bs';
 import { BsFillCaretLeftFill } from 'react-icons/bs';
 
-import environment from '../../images/environment.svg';
-import healthcare from '../../images/healthcare.svg';
-import infosec from '../../images/infosec.svg';
-import agriculture from '../../images/agriculture.svg';
-import education from '../../images/education.svg';
-
-const data = [
-  {
-    image: environment,
-    title: 'Environment',
-    description:
-      'Build something around the theme of environment that helps in solving a real world problem.',
-  },
-  {
-    image: healthcare,
-    title: 'Healthcare',
-    description:
-      'Build something around the theme of health care that helps in solving a real world problem.',
-  },
-  {
-    image: infosec,
-    title: 'Information Security',
-    description:
-      'Build something around the theme of Information Security that helps in solving a real world problem.',
-  },
-  {
-    image: agriculture,
-    title: 'Agriculture',
-    description:
-      'Build something around the theme of agriculture that helps in solving a real world problem.',
-  },
-  {
-    image: education,
-    title: 'Education',
-    description:
-      'Build something around the theme of education that helps in solving a real world problem.',
-  },
-];
+import data from './index.constants';
 
 export default function ThemesCarousel() {
   const ref = React.useRef<ResponsiveContainerProps>();
