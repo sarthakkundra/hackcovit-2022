@@ -18,10 +18,10 @@ const prizeCard = (prize: IPrize) => {
 const index = () => {
   return (
     <>
-      <h1 className="text-xl md:text-4xl font-semibold text-secondary text-center mb-8 mt-16">
+      <h1 className="text-xl md:text-4xl font-semibold text-secondary text-center mb-8 mt-16 w-screen mx-auto">
         Prizes
       </h1>
-      <div className="flex flex-col md:flex-row justify-between items-center">
+      <div className="flex flex-col md:flex-row w-screen md:w-auto justify-between items-center">
         {prizeValues.map((prize: IPrize) => (
           <>{prizeCard(prize)}</>
         ))}
