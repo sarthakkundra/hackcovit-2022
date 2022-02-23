@@ -8,7 +8,7 @@ interface IPrize {
 }
 const prizeCard = (prize: IPrize) => {
   return (
-    <div className="flex flex-col justify-start items-center py-12 px-14 bg-lightBlack gradient-box">
+    <div className="flex flex-col my-4 justify-start items-center py-12 px-14 bg-lightBlack gradient-box">
       <img src={prize.icon} className="w-24" />
       <p className="text-white font-bold my-2">{prize.position}</p>
       <p className="text-white">{prize.award}</p>

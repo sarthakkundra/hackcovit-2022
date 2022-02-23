@@ -6,8 +6,8 @@ const About = () => {
       <h1 className="text-xl md:text-4xl font-semibold text-secondary text-center my-5">
         About
       </h1>
-      <div className="w-3/4 mx-auto flex rounded-lg">
-        <div className="w-1/3">
+      <div className="w-full md:w-3/4 mx-auto flex rounded-lg">
+        <div className="hidden md:block w-1/3">
           <div
             style={{
               background:
@@ -19,7 +19,7 @@ const About = () => {
             <img src={texture} className="h-full w-full" />
           </div>
         </div>
-        <div className="w-2/3 text-base md:text-xl text-center bg-lightBlack p-10 flex items-center justify-center">
+        <div className="w-full md:w-2/3 text-xs sm:text-base md:text-xl text-center bg-lightBlack p-10 flex items-center justify-center">
           HackCoVIT 2022 is an initiative by VIT University, Bhopal. It is aimed
           at bringing out the best technical solutions for various problems
           faced by the people in the real world. Through this initiative, the

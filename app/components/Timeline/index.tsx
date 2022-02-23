@@ -21,12 +21,12 @@ const index = () => {
               </h1>
             </div>
             <div
-              className={`order-1 bg-lightBlack shadow-xl w-5/12 px-6 py-4 gradient-box`}
+              className={`order-1 bg-lightBlack shadow-xl w-5/12 sm:w-5/12 px-2 md:px-6 py-4 gradient-box`}
             >
-              <h3 className="mb-3 font-bold text-gray-800 text-xl">
+              <h3 className="mb-3 font-bold text-gray-800 text-sm md:text-xl">
                 Registrations Begin
               </h3>
-              <p className="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">
+              <p className="text-xs sm:text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">
                 Participants can start registering for the hackathon.
               </p>
             </div>
@@ -39,11 +39,11 @@ const index = () => {
                 2
               </h1>
             </div>
-            <div className="order-1 bg-lightBlack rounded-lg shadow-xl w-5/12 px-6 py-4 gradient-box">
-              <h3 className="mb-3 font-bold text-white text-xl">
+            <div className="order-1 bg-lightBlack rounded-lg shadow-xl w-5/12 px-2 md:px-6 py-4 gradient-box">
+              <h3 className="mb-3 font-bold text-white text-sm md:text-xl">
                 Registrations Closed
               </h3>
-              <p className="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">
+              <p className="text-xs md:text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">
                 Registrations for the hackathon are closed.
               </p>
             </div>
@@ -56,11 +56,11 @@ const index = () => {
                 3
               </h1>
             </div>
-            <div className="order-1 bg-lightBlack rounded-lg shadow-xl w-5/12 px-6 py-4 gradient-box">
-              <h3 className="mb-3 font-bold text-gray-800 text-xl">
+            <div className="order-1 bg-lightBlack rounded-lg shadow-xl w-5/12 px-2 md:px-6 py-4 gradient-box">
+              <h3 className="mb-3 font-bold text-gray-800 text-sm md:text-xl">
                 Main Event
               </h3>
-              <p className="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">
+              <p className="text-xs md:text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">
                 Participants can start building upon their ideas.
               </p>
             </div>
@@ -73,11 +73,11 @@ const index = () => {
                 4
               </h1>
             </div>
-            <div className="order-1 bg-lightBlack rounded-lg shadow-xl w-5/12 px-6 py-4 gradient-box">
-              <h3 className="mb-3 font-bold text-white text-xl">
+            <div className="order-1 bg-lightBlack rounded-lg shadow-xl w-5/12 px-2 md:px-6 py-4 gradient-box">
+              <h3 className="mb-3 font-bold text-white text-sm md:text-xl">
                 Result Declaration
               </h3>
-              <p className="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">
+              <p className="text-xs md:text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">
                 The winners of the hackathon are announced.
               </p>
             </div>
