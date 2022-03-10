@@ -24,7 +24,7 @@ const index = () => {
               className={`order-1 bg-lightBlack shadow-xl w-5/12 sm:w-5/12 px-2 md:px-6 py-4 gradient-box`}
             >
               <h3 className="mb-3 font-bold text-gray-800 text-sm md:text-xl">
-                Registrations Begin
+                Registrations Begin 21 Feb 00:00 IST
               </h3>
               <p className="text-xs sm:text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">
                 Participants can start registering for the hackathon.
@@ -41,7 +41,7 @@ const index = () => {
             </div>
             <div className="order-1 bg-lightBlack rounded-lg shadow-xl w-5/12 px-2 md:px-6 py-4 gradient-box">
               <h3 className="mb-3 font-bold text-white text-sm md:text-xl">
-                Registrations Closed
+                Registrations Closed 01 Apr 11:59 IST
               </h3>
               <p className="text-xs md:text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">
                 Registrations for the hackathon are closed.
@@ -58,7 +58,7 @@ const index = () => {
             </div>
             <div className="order-1 bg-lightBlack rounded-lg shadow-xl w-5/12 px-2 md:px-6 py-4 gradient-box">
               <h3 className="mb-3 font-bold text-gray-800 text-sm md:text-xl">
-                Main Event
+                Main Event 09 Apr 00:00 - 10 Apr 12:00 IST
               </h3>
               <p className="text-xs md:text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">
                 Participants can start building upon their ideas.
@@ -75,7 +75,7 @@ const index = () => {
             </div>
             <div className="order-1 bg-lightBlack rounded-lg shadow-xl w-5/12 px-2 md:px-6 py-4 gradient-box">
               <h3 className="mb-3 font-bold text-white text-sm md:text-xl">
-                Result Declaration
+                Result Declaration 11 Apt 16:00 IST
               </h3>
               <p className="text-xs md:text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">
                 The winners of the hackathon are announced.
