@@ -8,44 +8,7 @@ import {
 import { BsFillCaretRightFill } from 'react-icons/bs';
 import { BsFillCaretLeftFill } from 'react-icons/bs';
 
-import environment from '../../images/environment.svg';
-import healthcare from '../../images/healthcare.svg';
-import infosec from '../../images/infosec.svg';
-import agriculture from '../../images/agriculture.svg';
-import education from '../../images/education.svg';
-
-const data = [
-  {
-    image: environment,
-    title: 'Environment',
-    description:
-      'Build something around the theme of environment that helps in solving a real world problem.',
-  },
-  {
-    image: healthcare,
-    title: 'Healthcare',
-    description:
-      'Build something around the theme of health care that helps in solving a real world problem.',
-  },
-  {
-    image: infosec,
-    title: 'Information Security',
-    description:
-      'Build something around the theme of Information Security that helps in solving a real world problem.',
-  },
-  {
-    image: agriculture,
-    title: 'Agriculture',
-    description:
-      'Build something around the theme of agriculture that helps in solving a real world problem.',
-  },
-  {
-    image: education,
-    title: 'Education',
-    description:
-      'Build something around the theme of education that helps in solving a real world problem.',
-  },
-];
+import data from './index.constants';
 
 export default function ThemesCarousel() {
   const ref = React.useRef<ResponsiveContainerProps>();
@@ -92,12 +55,20 @@ const Slide = React.memo(function (props: StackedCarouselSlideProps) {
   const { data, dataIndex } = props;
   const { image, title, description } = data[dataIndex];
 
+  const getCarouselHeight = () => {
+    if(window?.innerWidth < 400) {
+      return 300;
+    } else {
+      return 400;
+    }
+  }
+
   return (
     <div
       className="flex p-4 md:p-10"
       style={{
         width: '100%',
-        height: 300,
+        height: 400, //getCarouselHeight(),
         background: '#1b1b1b',
         border: '2px solid',
         borderImage: 'linear-gradient(180deg, #FFA95A 0%, #FF7979 100%) 30%',
@@ -107,7 +78,7 @@ const Slide = React.memo(function (props: StackedCarouselSlideProps) {
         <h1 className="text-md md:text-2xl font-semibold my-2">{title}</h1>
         <p className="text-xs md:text-sm font-semibold my-2">{description}</p>
       </div>
-      <img src={image} className="w-1/2" />
+      <img src={image} className="w-1/3 md:w-1/2" />
     </div>
   );
 });
