@@ -541,10 +541,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
-.w-3\/4 {
-  width: 75%;
-}
-
 .w-1\/2 {
   width: 50%;
 }
@@ -588,10 +584,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .p-16 {
   padding: 4rem;
-}
-
-.p-10 {
-  padding: 2.5rem;
 }
 
 .p-4 {
