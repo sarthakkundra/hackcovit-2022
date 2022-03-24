@@ -6,7 +6,7 @@ const Countdown = () => {
   const [minutes, setMinutes] = useState('0');
   const [seconds, setSeconds] = useState('0');
 
-  const countDownDate = new Date('March 22, 2022 15:37:25').getTime();
+  const countDownDate = new Date('April 05, 2022 10:00:00').getTime();
 
   const x = setInterval(function () {
     const now = new Date().getTime();

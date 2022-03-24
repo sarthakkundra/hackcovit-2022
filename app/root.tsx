@@ -19,6 +19,7 @@ export default function App() {
   return (
     <html lang="en">
       <head>
+        <title>HackCoVIT 2002</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
