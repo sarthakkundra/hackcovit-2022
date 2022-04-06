@@ -502,12 +502,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
 
 .relative {
   position: relative;
+}
+
+.top-0 {
+  top: 0px;
 }
 
 .z-20 {
@@ -580,6 +588,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
+.h-24 {
+  height: 6rem;
+}
+
 .h-full {
   height: 100%;
 }
@@ -596,16 +608,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 2rem;
 }
 
+.h-12 {
+  height: 3rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
 
-.w-10\/12 {
-  width: 83.333333%;
-}
-
 .w-full {
   width: 100%;
+}
+
+.w-10\/12 {
+  width: 83.333333%;
 }
 
 .w-1\/3 {
@@ -691,6 +707,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-background {
   --tw-bg-opacity: 1;
   background-color: rgb(27 27 27 / var(--tw-bg-opacity));
+}
+
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 121 121 / var(--tw-bg-opacity));
 }
 
 .bg-lightBlack {
@@ -817,8 +838,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(255 121 121 / var(--tw-text-opacity));
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .text-opacity-100 {
   --tw-text-opacity: 1;
+}
+
+.underline {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 .shadow-xl {

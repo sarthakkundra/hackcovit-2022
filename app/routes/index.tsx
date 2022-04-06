@@ -13,12 +13,18 @@ export function links() {
 export default function Index() {
   return (
     <>
+      <div className="h-12 fixed top-0 w-full bg-primary text-center text-black font-semibold flex items-center justify-center text-lg">
+        Round One result has been announced.&nbsp;
+        <a className="underline" href="public/RESULT-ROUND-ONE.pdf" download>
+          Check out the list here!
+        </a>
+      </div>
       <Hero />
       <About />
       <div className="w-10/12 mx-auto">
-      <Timeline />
-      <Prizes />
-      <Themes />
+        <Timeline />
+        <Prizes />
+        <Themes />
       </div>
     </>
   );
